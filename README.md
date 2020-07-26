@@ -9,6 +9,7 @@ char* c1 = (char*)linearAllocator.Allocate(12, 8);
 Datastructure *linear1 = MemoryManager::Allocate<Datastructure>(linearAllocator, 16,0,0,0);
 Datastructure *linear2 = MemoryManager::Allocate<Datastructure>(linearAllocator,0,0,0,0);
 
+linearAllocator.Free(c1);
 linearAllocator.Free(linear1);
 linearAllocator.Free(linear2);
 
