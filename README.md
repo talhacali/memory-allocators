@@ -13,7 +13,7 @@ linearAllocator.Free(c1);
 linearAllocator.Free(linear1);
 linearAllocator.Free(linear2);
 
-MemoryManager::PoolAllocator poolAllocator(1000,10);
+MemoryManager::PoolAllocator poolAllocator(1000,sizeof(Datastructure));
 Datastructure *pool1 = MemoryManager::Allocate<Datastructure>(poolAllocator, 0, 0, 0, 0);
 MemoryManager::Delete<Datastructure>(poolAllocator, pool1);
 ```
