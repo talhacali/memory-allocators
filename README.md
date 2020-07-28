@@ -1,5 +1,5 @@
 # memory-allocators
-This repository is a custom dynamic memory manager that I developed  but decided to not use for my ECS implementation. It is easy-to-use and has linear and pool allocator. The C++ version is C++17 and I used Boost.Test for unit testing. 
+This repository is a custom dynamic memory manager that I developed for my ECS implementation. It is easy-to-use and has linear and pool allocator. The C++ version is C++17 and I used Boost.Test for unit testing. 
 
 ## Example Usage
 ```C++
